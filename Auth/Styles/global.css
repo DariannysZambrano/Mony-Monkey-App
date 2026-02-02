@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nuni;
+}
+
+:root {
+  --purple-primary: #6b40a3;
+  --purple-light: #9d73d2;
+  --text-dark: #2d2d2d;
+  --text-gray: #757575;
+  --border-color: #d1d1d1;
+  --bg-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* --- Header --- */
+header {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: flex-end; /* Alinea el "Get Started" a la derecha */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.9rem;
+}
+
+nav a {
+  color: var(--purple-primary);
+  text-decoration: none;
+  border: 1px solid var(--purple-primary);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--purple-primary);
+  color: white;
+}
+
+/* --- Layout Principal --- */
+main {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section {
+  flex: 1;
+  padding: 20px;
+}
+
+/* --- Columna Izquierda (Hero) --- */
+.hero-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.text-purple {
+  color: var(--purple-light);
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Columna Derecha (Formulario) --- */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+label {
+  margin: 15px 0 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.password-container { /* Sugerencia: envuelve el input de pass y el ojo en un div */
+  position: relative;
+}
+
+/* Botón Sign In */
+button[type="submit"] {
+  background: linear-gradient(to right, var(--purple-primary), var(--purple-light));
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+  box-shadow: 0 4px 15px rgba(107, 64, 163, 0.3);
+}
+
+/* Checkbox y Forgot Password */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 0.85rem;
+}
+
+.form-footer a {
+  color: var(--text-dark);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Divisor Social */
+.social-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0;
+  color: var(--text-gray);
+  font-size: 0.8rem;
+}
+
+.social-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #eee;
+  margin-left: 10px;
+}
+
+/* Botones Social Login */
+.social-login {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-social {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.btn-social img {
+  width: 20px;
+}
